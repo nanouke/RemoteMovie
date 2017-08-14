@@ -1,0 +1,25 @@
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <ul class="list-unstyled">
+                    {{#each videos}}
+                    <li><a href="#" class="movieToPlay" data-movie-name="{{this}}">{{this}}</a></li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <button><i class="fa fa-step-backward fa-5x" aria-hidden="true"></i></button>             
+            </div>
+            <div class="col-6 text-center">
+                <button id="btn-play"><i class="fa fa-play fa-5x" aria-hidden="true"></i></button>
+                <button id="btn-play"><i class="fa fa-pause fa-5x" aria-hidden="true"></i></button>                 
+            </div>
+            <div class="col ">
+                <button><i class="fa fa-step-forward fa-5x" aria-hidden="true"></i></button>                 
+            </div>
+        </div>
+    </div>
